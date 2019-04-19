@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import SEO from './seo'
 import { Link } from './link'
 import { H3 } from './typography'
-import Logo from '../../static/logo.svg'
+import Logo from '../../static/ga.svg'
 
 import '../styles/index.sass'
 import classes from '../styles/layout.module.sass'
@@ -52,39 +52,6 @@ const Layout = ({ isHome, title, description, children }) => {
                                 )}
                                 {children}
                             </div>
-
-                            <footer className={classes.footer}>
-                                <div className={classes.footerContent}>
-                                    <section className={classes.footerSection}>
-                                        <H3>About this course</H3>
-                                        <p>{meta.description}</p>
-                                    </section>
-
-                                    <section className={classes.footerSection}>
-                                        <H3>About me</H3>
-                                        {meta.showProfileImage && (
-                                            <img
-                                                src="/profile.jpg"
-                                                alt=""
-                                                className={classes.profile}
-                                            />
-                                        )}
-                                        <p>{meta.bio}</p>
-                                    </section>
-
-                                    {meta.footerLinks && (
-                                        <ul className={classes.footerLinks}>
-                                            {meta.footerLinks.map(({ text, url }, i) => (
-                                                <li key={i} className={classes.footerLink}>
-                                                    <Link variant="secondary" to={url}>
-                                                        {text}
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
-                                </div>
-                            </footer>
                         </main>
                     </>
                 )
