@@ -1,12 +1,22 @@
 ---
 title: 'Chapter 1: Introduction to Decision Trees'
 description:
-  'This chapter assumes the following requirements : Basic understanding of Python'
+  'This chapter will introduce you to the basics of understanding what are decision trees and building them.'
 prev: null
 next: /chapter2
 type: chapter
 id: 1
 ---
+
+<exercise id="1" title="Requirements" type="slides">
+
+This chapter requires the following concepts/basics :
+- Introduction to machine learning
+- Python coding skills
+- Data manipulation with Pandas
+- Basics with Scikit-learn
+
+</exercise>
 
 <exercise id="1" title="Lesson" type="slides">
 
